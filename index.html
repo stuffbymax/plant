@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Moisture Monitor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    h1 {
+      color: #4CAF50;
+    }
+    .moisture-value {
+      font-size: 2em;
+      margin: 20px 0;
+    }
+    .loading {
+      font-size: 1.5em;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Plant Moisture Monitor</h1>
+    <p class="moisture-value">Loading moisture data...</p>
+    <p>Last updated: <span id="last-updated">-</span></p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
