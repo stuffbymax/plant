@@ -4,45 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Plant Moisture Monitor</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .container {
-      background-color: #f0f0f0;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-    h1 {
-      color: #4CAF50;
-    }
-    .moisture-value {
-      font-size: 2em;
-      margin: 20px 0;
-    }
-    .loading {
-      font-size: 1.5em;
-      color: gray;
-    }
-  </style>
 </head>
+<link rel="stylesheet" href="style.css">
 <body>
+
 
   <div class="container">
     <h1>Plant Moisture Monitor</h1>
     <p class="moisture-value">Loading moisture data...</p>
     <p>Last updated: <span id="last-updated">-</span></p>
+    <!-- Canvas for the line chart -->
+    <canvas id="moistureLineChart" width="400" height="200"></canvas>
+    <!-- Canvas for the pie chart -->
+    <canvas id="moisturePieChart" width="400" height="200"></canvas>
   </div>
 
-  <script src="app.js"></script>
+
+  <!-- Chart.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- app.js.js Library -->
+<script src="app.js"></script>
+
+  <!-- not part of the project -->
+   
+        <!-- Audio Element -->
+        <audio id="background-music" autoplay loop>
+          <source src="audio/INTERSLAVIC SLAVBASS - MEDŽUSLOVJANSKY SLAVBASS - МЕДЖУСЛОВЈАНСКЫ СЛАВБАСС.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio>
+
 </body>
 </html>
