@@ -125,18 +125,4 @@ const audio = document.getElementById('background-music');
 
 
 
-// not part of the stuff
-// Play the audio when the page loads
-window.onload = function() {
-    audio.play().catch(error => {
-        console.log('Error playing audio:', error);
-        // You might want to inform the user or provide a manual play option
-    });
-};
 
-// Optional: Function to handle when audio ends
-audio.addEventListener('ended', function() {
-    // Restart audio if you want
-    audio.currentTime = 0; // Reset to the beginning if you want it to loop
-    audio.play(); // Play again if needed
-});
